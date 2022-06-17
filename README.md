@@ -126,7 +126,7 @@
 
 8) Устанавливаем Alertmanager \
    Установлка Alertmanager происходит аналогично Prometheus и Node Exporter
-   ссылка на [Alertmanager](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz)
+   ссылка на [Alertmanager](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz) \
    Пример конфигурации Alertmanager с отправкой алертов в Telegram_bot [alertmanager.yml](https://github.com/defmeg/otus/blob/main/GAP-1/alertmanager.yml)
    
     
