@@ -84,4 +84,38 @@
     systemctl start prometheus  
    ```
    Устанавливаем Node Exporter
+   ```
+    wget https://github.com/prometheus/node_exporter/releases/download/v0.17.0/node_exporter-1.3.1.linux-amd64.tar.gz
+    tar -xf node_exporter-1.3.1.linux-amd64.tar.gz
+    cp node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin
+    chown node_exporter:node_exporter /usr/local/bin/node_exporter
+    rm -rf node_exporter-1.3.1.linux-amd64*
+   ```
+   Создаем демон для управления сервисом Node Exporter
+   ```
+    vim /etc/systemd/system/node_exporter.service
+    
+    [Unit]
+    Description=Node Exporter
+    Wants=network-online.target
+    After=network-online.target
+
+    [Service]
+    User=node_exporter
+    Group=node_exporter
+    Type=simple
+    ExecStart=/usr/local/bin/node_exporter
+
+    [Install]
+    WantedBy=multi-user.target
+   ```
+   Применяяем конфигурацию демона и стартуем Node Exporter
+   ```
+    systemctl daemon-reload
+    systemctl enable node_exporter
+    systemctl start node_exporter
+   ```
+   Добавляем в файл конфигурации Prometheus [prometheus.yml](https://github.com/defmeg/otus/blob/main/GAP-1/prometheus.yml) job Node Exporter
    
+    
+ 
