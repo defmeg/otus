@@ -124,7 +124,7 @@
    Открываем  Prometheus http://prometeus.wordpressvm.io/targets и проверям добавление Node Exporter
    ![image](https://user-images.githubusercontent.com/104725435/174321989-71ec18c2-16f2-4deb-815d-d61d3a999713.png)
 
-8) Устанавливаем Alertmanager
+8) Устанавливаем Alertmanager \
    Установлка Alertmanager происходит аналогично Prometheus и Node Exporter
    ссылка на [Alertmanager](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz)
    Пример конфигурации Alertmanager с отправкой алертов в Telegram_bot [alertmanager.yml](https://github.com/defmeg/otus/blob/main/GAP-1/alertmanager.yml)
