@@ -51,5 +51,37 @@
    ```
     vim /etc/prometheus/prometheus.yml
    ```
-   
+   Применяем разрегения к файлу конфигурации Prometheus
+   ```
+    chown prometheus:prometheus /etc/prometheus/prometheus.yml
+   ```
+   Создаем демон для управления сервисом Prometheus
+   ```
+    vim /etc/systemd/system/prometheus.service
+    
+    [Unit]
+    Description=Prometheus
+    Wants=network-online.target
+    After=network-online.target
+
+    [Service]
+    User=prometheus
+    Group=prometheus
+    Type=simple
+    ExecStart=/usr/local/bin/prometheus \
+        --config.file /etc/prometheus/prometheus.yml \
+        --storage.tsdb.path /var/lib/prometheus/ \
+        --web.console.templates=/etc/prometheus/consoles \
+        --web.console.libraries=/etc/prometheus/console_libraries
+
+    [Install]
+    WantedBy=multi-user.target
+   ```
+   Применяяем конфигурацию демона и стартуем Prometheus
+   ```
+    systemctl daemon-reload
+    systemctl enable prometheus
+    systemctl start prometheus  
+   ```
+   Устанавливаем Node Exporter
    
