@@ -116,6 +116,14 @@
     systemctl start node_exporter
    ```
    Добавляем в файл конфигурации Prometheus [prometheus.yml](https://github.com/defmeg/otus/blob/main/GAP-1/prometheus.yml) job Node Exporter
+   Перезапускаем Prometheus
+   ```
+    systemctl restart prometheus
+   ```
+   Добавляем в nignx.conf Prometheus, пример [nginx.conf](https://github.com/defmeg/otus/blob/main/GAP-1/nginx.conf)
+   Открываем  Prometheus http://prometeus.wordpressvm.io/targets и проверям добавление Node Exporter
+   ![image](https://user-images.githubusercontent.com/104725435/174321989-71ec18c2-16f2-4deb-815d-d61d3a999713.png)
+
    
     
  
