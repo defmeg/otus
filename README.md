@@ -140,6 +140,6 @@
     vim /etc/prometheus/alert.rules.yml
     ```
     Пример файла конфигурации [alert.rules.yml](https://github.com/defmeg/otus/blob/main/GAP-1/alert.rules.yml)
-    После перезапуска Prometheus заходим в Prometheus status/rules
+    После перезапуска Prometheus заходим в Prometheus status/rules \
     ![image](https://user-images.githubusercontent.com/104725435/174665634-ad297054-b4a1-4418-a04b-284f4bfcf851.png)
 
