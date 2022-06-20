@@ -129,5 +129,9 @@
    ссылка на [Alertmanager](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz) \
    Пример конфигурации Alertmanager с отправкой алертов в Telegram_bot [alertmanager.yml](https://github.com/defmeg/otus/blob/main/GAP-1/alertmanager.yml)
    
-    
+9) Установка Blackbox Exporter \
+   Установлка Blackbox Exporter происходит аналогично Prometheus и Node Exporter
+   ссылка на [Blackbox Exporter](https://github.com/prometheus/blackbox_exporter/releases/download/v0.21.0/blackbox_exporter-0.21.0.linux-amd64.tar.gz)
+   Пример конфигурации Blackbox Exporter [blackbox.yml](https://github.com/defmeg/otus/blob/main/GAP-1/blackbox.yml)
+   Далее длобавть Blackbox Exporter в конфигурацию [prometheus.yml](https://github.com/defmeg/otus/blob/main/GAP-1/prometheus.yml)
  
