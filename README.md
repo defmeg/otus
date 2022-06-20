@@ -135,3 +135,11 @@
    Пример конфигурации Blackbox Exporter [blackbox.yml](https://github.com/defmeg/otus/blob/main/GAP-1/blackbox.yml)
    Далее длобавть Blackbox Exporter в конфигурацию [prometheus.yml](https://github.com/defmeg/otus/blob/main/GAP-1/prometheus.yml)
  
+10) Нужно сконфигурировать алерты
+    ```
+    vim /etc/prometheus/alert.rules.yml
+    ```
+    Пример файла конфигурации [alert.rules.yml](https://github.com/defmeg/otus/blob/main/GAP-1/alert.rules.yml)
+    После перезапуска Prometheus заходим в Prometheus status/rules
+    ![image](https://user-images.githubusercontent.com/104725435/174665634-ad297054-b4a1-4418-a04b-284f4bfcf851.png)
+
