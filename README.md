@@ -1,5 +1,5 @@
 # Observability - мониторинг, логирование, трейсинг
-## Для выполнения первого задания пондобиться следуюшие действия:
+## Для выполнения первого задания требуется выполнить следуюшие действия:
 1) Устанавливаем на Вашу VM OS CentOS Linux v 7
 2) Обновляем
     ```
@@ -145,3 +145,30 @@
     ![image](https://user-images.githubusercontent.com/104725435/174665634-ad297054-b4a1-4418-a04b-284f4bfcf851.png)
 11) Устанавливам в docker [prometheus_bot](https://github.com/inCaller/prometheus_bot)
 
+## Для выполнения второго задания требуется выполнить следуюшие действия:
+1) Устанавливаем Grafana
+   Создаем файл конфигурации репозитория для графаны:
+   ```
+    vim /etc/yum.repos.d/grafana.repo
+    ...
+    [grafana]
+    name=grafana
+    baseurl=https://packages.grafana.com/oss/rpm
+    repo_gpgcheck=1
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://packages.grafana.com/gpg.key
+    sslverify=1
+    sslcacert=/etc/pki/tls/certs/ca-bundle.crt
+   ```
+   Устанавливаем:
+   ```
+    yum install grafana
+   ```
+   Зпускаем сервис grafana-server
+   ```
+    systemctl enable grafana-server
+    systemctl start grafana-server
+   ```
+   
+    
