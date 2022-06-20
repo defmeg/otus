@@ -170,5 +170,9 @@
     systemctl enable grafana-server
     systemctl start grafana-server
    ```
+   Добавляем Data Sourse Prometheus
+   И создаем следующие дашбоарды \
+   1 - [Сводная информация по инфраструктуре (CPU, RAM, Network, etc.)](https://github.com/defmeg/otus/blob/main/GAP-2/Grafana_dashboard_nod_exporter.png)
+   2 - [Cводная информация о CMS (доступность компонентов, время ответа, etc.)](https://github.com/defmeg/otus/blob/main/GAP-2/Grafana_dashboard_CMS_nginx.png)
    
     
