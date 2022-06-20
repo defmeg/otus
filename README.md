@@ -11,6 +11,7 @@
     yum install epel-release 
     yum install telnet
     yum install wget
+    yum install vim
 4) Устанавливаем CMS wordpress по официальной инструкции [Как установить Wordpress](https://wordpress.org/support/article/how-to-install-wordpress/)
 5) Устанавливаем nginx
     ```
