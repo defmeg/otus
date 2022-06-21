@@ -211,6 +211,8 @@
    [filebeat](https://github.com/defmeg/otus/blob/main/GAP-3/filebeat.png) \
    [heartbeat](https://github.com/defmeg/otus/blob/main/GAP-3/heartbeat.png) \
    [metricbeat](https://github.com/defmeg/otus/blob/main/GAP-3/metricbeat.png)
+   
+6) Результат проверки индекса: [Index_elastic](https://github.com/defmeg/otus/blob/main/GAP-4/Index_elastic)
     
    
     
