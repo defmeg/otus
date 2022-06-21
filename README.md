@@ -200,10 +200,10 @@
     yum install elasticsearch-8.2.2-x86_64.rpm
     yum install kibana-8.2.2-x86_64.rpm
    ```
-   По заданию делаем отправку логов через logstash 
+   По заданию делаем отправку логов через logstash \
    Файлы конфигураий logstash расположенных в /etc/logstash/conf.d : \
     [logstash.conf](https://github.com/defmeg/otus/blob/main/GAP-4/logstash.conf) \
-    [filter.conf](https://github.com/defmeg/otus/blob/main/GAP-4/filter.conf) \
+    [filter.conf](https://github.com/defmeg/otus/blob/main/GAP-4/filter.conf)
     
    
     
