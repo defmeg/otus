@@ -1,10 +1,11 @@
-[root@wordpressvm modules.d]# curl -GET localhost:9200/_cat/indices?v
+[root@wordpressvm conf.d]# curl -GET localhost:9200/_cat/indices?v
 health status index                                  uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-yellow open   heartbeat-2022.06.21                   B9tD-YgSRgC0eR-5XBK6Jg   1   1        107            0    521.5kb        521.5kb
-yellow open   filebeat-2022.06.21                    quwQOu0ARJCAXG74qJJ7HQ   1   1        897            0    552.7kb        552.7kb
-yellow open   metricbeat-2022.06.21                  DKI8pKDxThiuH5FLflwdZw   1   1     700464            0    406.1mb        406.1mb
-green  open   .monitoring-kibana-7-2022.06.21        jyDIoyueT0u8GJVilXDXvw   1   0        202            0    187.5kb        187.5kb
-yellow open   .ds-heartbeat-8.2.2-2022.06.15-000001  1TbP5EsmRJuwJggWphFy3A   1   1       7372            0       24mb           24mb
-yellow open   .ds-filebeat-8.2.2-2022.06.21-000001   lObWVmqeRP69x2pyHaW0aQ   1   1          0            0       225b           225b
-green  open   .monitoring-es-7-2022.06.21            PbEgtOcgSc2hj1vt3Q413g   1   0       1317         1104      3.2mb          3.2mb
+green  open   .monitoring-es-7-2022.06.21            PbEgtOcgSc2hj1vt3Q413g   1   0       5185         8528      7.6mb          7.6mb
 yellow open   .ds-metricbeat-8.2.2-2022.06.16-000001 u7tP20KrSV-TEa_5SKcDqw   1   1     122816            0      117mb          117mb
+yellow open   filebeat-2022.06.21                    quwQOu0ARJCAXG74qJJ7HQ   1   1     205678            0    172.2mb        172.2mb
+yellow open   .ds-heartbeat-8.2.2-2022.06.15-000001  1TbP5EsmRJuwJggWphFy3A   1   1       7372            0       24mb           24mb
+yellow open   heartbeat-2022.06.21                   B9tD-YgSRgC0eR-5XBK6Jg   1   1        577            0      1.6mb          1.6mb
+yellow open   .ds-filebeat-8.2.2-2022.06.21-000001   lObWVmqeRP69x2pyHaW0aQ   1   1          0            0       225b           225b
+yellow open   metricbeat-2022.06.21                  DKI8pKDxThiuH5FLflwdZw   1   1     727914            0    427.8mb        427.8mb
+yellow open   syslogs-2022.06                        5-ewtlU8SFSX3rpACJxE3g   1   1        570            0      227kb          227kb
+green  open   .monitoring-kibana-7-2022.06.21        jyDIoyueT0u8GJVilXDXvw   1   0        802            0      553kb          553kb
