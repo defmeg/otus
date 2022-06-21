@@ -175,4 +175,25 @@
    1 - [Сводная информация по инфраструктуре (CPU, RAM, Network, etc.)](https://github.com/defmeg/otus/blob/main/GAP-2/Grafana_dashboard_nod_exporter.png) \
    2 - [Cводная информация о CMS (доступность компонентов, время ответа, etc.)](https://github.com/defmeg/otus/blob/main/GAP-2/Grafana_dashboard_CMS_nginx.png)
    
+   ## Для выполнения третьего задания требуется выполнить следуюшие действия:
+   1) Скачать дитрибутивы hearthbeat, filebeat и metricbeat с официального сайта: [Страница загрузки](https://www.elastic.co/downloads/beats/)
+      скачиваем версию rpm x86_64
+   2) Устанавливаем скаченные пакеты:
+   ```
+    yum install filebeat-8.2.2-x86_64.rpm
+    yum install metricbeat-8.2.2-x86_64.rpm
+    yum install heartbeat-8.2.2-x86_64.rpm
+   ```
+   3) Скачать дистрибутивы logstash, elasticsearch и kibana с официального сайта: \
+      так же скачиваем версию rpm x86_64 \
+      [logstash](https://www.elastic.co/downloads/logstash) \
+      [elasticsearch](https://www.elastic.co/downloads/elasticsearch) \
+      [kibana](https://www.elastic.co/downloads/kibana) \
+    ```
+     yum install logstash-8.2.2-x86_64.rpm
+     yum install elasticsearch-8.2.2-x86_64.rpm
+     yum install kibana-8.2.2-x86_64.rpm
+    ```
+    
+   
     
