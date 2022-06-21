@@ -184,11 +184,15 @@
     yum install metricbeat-8.2.2-x86_64.rpm
     yum install heartbeat-8.2.2-x86_64.rpm
    ```
+   Файлы конфигураий beats:
+      [filebeat.yml](https://github.com/defmeg/otus/blob/main/GAP-3/filebeat.yml) \
+      [heartbeat.yml](https://github.com/defmeg/otus/blob/main/GAP-3/heartbeat.yml) \
+      [metricbeat.yml](https://github.com/defmeg/otus/blob/main/GAP-3/metricbeat.yml) \
    3) Скачать дистрибутивы logstash, elasticsearch и kibana с официального сайта: \
       так же скачиваем версию rpm x86_64 \
       [logstash](https://www.elastic.co/downloads/logstash) \
       [elasticsearch](https://www.elastic.co/downloads/elasticsearch) \
-      [kibana](https://www.elastic.co/downloads/kibana) \
+      [kibana](https://www.elastic.co/downloads/kibana)
     ```
      yum install logstash-8.2.2-x86_64.rpm
      yum install elasticsearch-8.2.2-x86_64.rpm
