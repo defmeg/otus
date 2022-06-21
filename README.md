@@ -204,7 +204,7 @@
    Файлы конфигураий logstash расположенных в /etc/logstash/conf.d : \
     [logstash.conf](https://github.com/defmeg/otus/blob/main/GAP-4/logstash.conf) \
     [filter.conf](https://github.com/defmeg/otus/blob/main/GAP-4/filter.conf) \
-    [rsyslog.conf](https://github.com/defmeg/otus/blob/main/GAP-4/rsyslog.conf)
+    [rsyslog.conf](https://github.com/defmeg/otus/blob/main/GAP-4/rsyslog.conf) \
    Так же добавляем в nginx.conf kibana [nginx.conf](https://github.com/defmeg/otus/blob/main/GAP-1/nginx.conf)
     
 5) Результат получения данных в Kibana: \
